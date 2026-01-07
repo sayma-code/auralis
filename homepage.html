@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Whisperly – PDF Submission</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Heading font (elegant/soft) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+    <!-- Body font (clean sans) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        @import url('style.css');
+    </style>
+</head>
+
+<body>
+    <section class="pdf-section">
+        <div class="pdf-card">
+            <div class="pdf-card-inner">
+                <h2 class="pdf-title">Submit Your PDF for Processing</h2>
+                <p class="pdf-subtitle">
+                    Upload your document and let Whisperly transform it into a clear, natural listening experience.
+                </p>
+
+                <form action="/upload-pdf" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="file" accept="application/pdf">
+                    <button type="submit">Upload PDF</button>
+                </form>
+
+
+                <p class="file-info">
+                    <span>PDF only</span> · Max size 20MB · One file per submission
+                </p>
+
+                <button class="submit-btn" type="button">
+                    Convert to Audio
+                </button>
+
+                <p class="helper-text">
+                    After submission, you’ll receive a link to listen, download, or share your generated audio.
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
