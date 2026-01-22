@@ -3,7 +3,7 @@ from fastapi import FastAPI, UploadFile, File
 from fastapi.responses import JSONResponse
 import shutil
 import os
-from process_pdf import process_pdf_to_audio
+from API.process_pdf import process_pdf_to_audio
 
 app = FastAPI()
 
